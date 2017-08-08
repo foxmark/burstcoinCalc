@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Burstcoin Calculator</title>
+ <link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/burstcoin.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img class="logo-img" src="img/fox.png">Burstcoin Calc.</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <!-- <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+          </ul> -->
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+    	<div class="row">
+    		<dir class="col-lg-3"></dir>
+    		<dir class="col-lg-6">
+				<form class="bs-example bs-example-form" data-example-id="input-group-sizing">
+					<div class="form-group">
+						<label for="form_account">Account</label>
+						<input type="text" class="form-control" id="form_account" value="9883441638135033418" placeholder="9883441638135033418">
+					</div>
+					<div class="form-group">
+						<label for="form_stager">Stager Size</label>
+						<input type="text" class="form-control" id="form_stager" value="3768320" placeholder="3768320">
+					</div>
+					<div class="form-group">
+						<label for="form_start">Start Value</label>
+						<input type="text" class="form-control" id="form_start" value="30088128" placeholder="30088128">
+					</div>
+					<div class="form-group">
+						<label for="form_filecount">Number of files</label>
+						<input type="text" class="form-control" id="form_filecount" value="4" placeholder="4">
+					</div>
+					<div class="form-group">
+						<label for="form_ramsize">Ram Size</label>
+						<input type="text" class="form-control" id="form_ramsize" value="8192" placeholder="8192">
+					</div>
+					<div class="form-group">
+						<label for="form_letter">Frist Drive Letter</label>
+						<select class="form-control" id="form_letter">
+							<option value="3">d</option>
+							<option value="4">e</option>
+							<option value="5">f</option>
+							<option value="6">g</option>
+							<option value="7">h</option>
+							<option value="8">i</option>
+							<option value="9">j</option>
+							<option value="10">k</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="form_hddcount">Number of drives</label>
+						<input type="text" class="form-control" id="form_hddcount" value="6" placeholder="6">
+					</div>
+					<div class="form-group">
+						<label for="form_endval">END VALUE! (aka next Start Value)</label>
+						<input type="text" class="form-control" id="form_endval" value="">
+					</div>
+					<button type="submit" onclick="return runCalc(event)" class="btn btn-default">Run</button>
+				</form>
+			</dir>
+			<dir class="col-lg-3"></dir>
+			<div class="row">
+				<div class="col-lg-12"><textarea rows="4" id="result" style="min-width: 100%"></textarea></div>
+			</div>
+		</div>
+    </div>
+    <footer class="footer">
+    	<div class="container">
+    		<span class="text-muted">All rights reserved - Foxmark - 2017.</span>
+    	</div>
+	</footer>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/burstcoin.js"></script>
+</body>
+</html>
